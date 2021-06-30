@@ -1,0 +1,220 @@
+body {
+  background-color: #D5DDE5;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
+.ProfilePicture {
+  width: 30%;
+  height: 30%;
+  object-fit:cover;
+  border-radius: 50%;
+  transition: all .2s ease-in-out;
+}
+
+.ProfilePicture:hover {
+  transform: scale(1.1);
+}
+
+.Introduction {
+  background-color: #003568;
+  padding-top: 16%;
+  font-family: 'Space Mono', monospace;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 16%;
+  display: block;
+  transition: all .2s ease-in-out;
+}
+
+
+
+.IntroText {
+  position: relative;
+  left: 5%;
+}
+
+
+.IntroText h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  font-size: 4.2vw;
+  margin-bottom: -10px;
+  margin-top: -10px;
+  margin-right: 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  // workaround for IE11
+  display: table;
+  color: #f6f0e5;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .9s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0% }
+  to { width: 70% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.name a{
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 2px;
+  color: #FFFF00;
+}
+
+h2{
+  font-size: 2.5vw;
+  color: #D5DDE5;
+}
+
+.subjects {
+  color: #D5DDE5;
+}
+
+.subjects span {
+  color: #f6f0e5;
+  text-decoration: underline;
+  text-decoration-thickness: 0.25vw;
+}
+
+.Work h1, .Skills h1, .contact-form h1{
+  font-family: 'Space Mono', monospace;
+  font-size: 3.2vw;
+  color: #003568;
+  font-weight: bold;
+  padding-left: 2vw;
+  text-decoration: underline;
+  text-decoration-thickness: 0.35vw;
+  margin-bottom: 3vw;
+}
+
+.Thumbnail {
+  height: 20vw;
+  box-shadow: 0.4vw 0.6vw rgba(0,0,0,0.2);
+  border-radius: 5%;
+  transition: all .2s ease-in-out;
+}
+
+.Thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0.45vw 0.65vw rgba(0,0,0,0.4);
+}
+
+table {
+  padding-left: 2vw;
+  font-family: 'Space Mono', monospace;
+  font-size: 2.5vw;
+  margin-bottom: 3vw;
+  table-layout: fixed;
+}
+
+.description {
+  color: #2F4F4F;
+  font-weight: 400;
+  font-size: 1.5vw;
+  font-style: italic;
+  margin-left: 1.5vw;
+  margin-right: 2vw;
+  text-align: justify;
+}
+
+.ProjectName, .Link{
+  /* color: #180D01; */
+  color: #003568;
+  font-weight: bold;
+  font-family: 'Space Mono', monospace;
+  font-size: 2.5vw;
+  text-decoration: none;
+}
+
+.ProjectName {
+  padding-left: 2vw;
+}
+
+.GithubLink {
+  color: #4c516d;
+}
+
+.Skills {
+  margin-top: 2vw;
+  margin-bottom: 10vw;
+}
+
+.skillset {
+  display: inline-block;
+  float: left;
+  margin-left: 2vw;
+  margin-right: 3vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: -0.2vw;
+  padding-bottom: -0.2vw;
+  font-family: 'Space Mono', monospace;
+  color: #D5DDE5;
+  background-color: #003568;
+  border-radius: 5vw;
+  font-size: 1.2vw;
+  font-weight: bold;
+  box-shadow: 0.2vw 0.4vw rgba(0,0,0,0.2);
+  transition: all .2s ease-in-out;
+  margiin-bottom: 3vw;
+}
+
+.skillset:hover {
+  transform: scale(1.1);
+  box-shadow: 0.25vw 0.45vw rgba(0,0,0,0.25);
+}
+
+.contact-form {
+  margin-top: 3vw;
+}
+
+form {
+  margin-left: 2vw;
+  margin-top: 4vw;
+  transition: all 4s ease-in-out;
+}
+
+.form-control {
+  width: 60vw;
+  background: #f6f0e5;
+  border: none;
+  outline: none;
+  border-bottom: 0.2vw solid #f6f0e5;
+  color: #2F4F4F;
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+  font-family: 'Space Mono', monospace;
+  border-radius: 2vw;
+}
+
+input {
+  height: 3vw;
+}
+
+form .submit {
+  background: #f6f0e5;
+  font-weight: bold;
+}
+
+form .submit:hover{
+  background: #D3D3D3;
+}

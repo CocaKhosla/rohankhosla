@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="FrontPage.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Khosla</title>
+  </head>
+  <body>
+
+    <div class="Introduction">
+      <img src="Profile Picture.JPG" alt="Imagine my photo here :P" align='left' class='ProfilePicture' id=''>
+      <div class="IntroText">
+        <h1>Hi! I'm <span class="name"><a href="https://www.linkedin.com/in/rohan-khosla-b25051166/">Rohan Khosla</a></span>.</h1>
+        <h2>I'm a Sophomore at BITS Pilani, K. K. Birla Goa Campus</h2>
+        <h2 class="subjects">I'm Studying <span>Computer Science</span> and <span>Mathematics</span></h2>
+      </div>
+    </div>
+
+    <div data-aos="fade-right" class="Skills">
+      <h1>Skills</h1>
+      <div class="skillset">
+        <p>python</p>
+      </div>
+      <div class="skillset">
+        <p>html</p>
+      </div>
+      <div class="skillset">
+        <p>css</p>
+      </div>
+      <div class="skillset">
+        <p>R</p>
+      </div>
+      <div class="skillset">
+        <p>C</p>
+      </div>
+      <div class="skillset">
+        <p>Selenium</p>
+      </div>
+      <div class="skillset">
+        <p>Video Editing</p>
+      </div>
+    </div>
+
+    <div class="Work">
+      <h1 data-aos="zoom-in-down" data-aos-offset="50">Projects / Work:</h1>
+      <div data-aos="fade-right" data-aos-offset="50" class="ProjectName">1. <a href="https://cocakhosla.github.io/incentrop" class="Link">Incentrop</a></div>
+      <table>
+        <tr>
+          <td data-aos="fade-up" ><img class="Thumbnail" src="Incentrop Image.png" alt=""></td>
+          <td><p class="description" data-aos="fade-down">Incentrop is a website designed using HTML, CSS and JS where I post about things that pique my interest. Being a Science student, I don't want to box myself into just learning about Science and Engineering. Hence, this website gives me an incentive to learn about both Science and the Arts.<br>
+          Source Code is on <a data-aos="fade-up" class="GithubLink"href="https://github.com/CocaKhosla/incentrop">Github</a></p></td>
+        </tr>
+      </table>
+
+      <div data-aos="fade-right" class="ProjectName">2. <a href="https://www.youtube.com/channel/UCkeYJ1z8rDJc-3Et1Oiy8OQ" class="Link">YouTube Channel: CocaKhosla</a></div>
+      <table>
+        <tr>
+          <td data-aos="fade-up"><img class="Thumbnail" src="Youtube Channel.png" alt=""></td>
+          <td><p class="description" data-aos="fade-down">The CocaKhosla Channel is where I upload programming related videos. The videos aren't tutorials per se. They're essays that focus on WHY I did what I did and briefly mention HOW I did what I did. Through my YouTube Channel, I want to try make Programming appear fun and accessible. The MOST IMPORTANT thing is to HAVE FUN while you code. Otherwise, it's simply not worth it.</p></td>
+        </tr>
+      </table>
+
+      <div data-aos="fade-right" class="ProjectName">3. <a href="" class="Link">Estimating the Profit of Bonds Using R Langauge</a></div>
+      <table class="last_project">
+        <tr>
+          <td data-aos="fade-up"><img class="Thumbnail" src="Margin Call.png" alt=""></td>
+          <td><p class="description" data-aos="fade-down">(Academic Project) S&P 500 rates corporate bonds on a scale from AAA - C where AAA rated bonds rarely default but give low returns and C rated bonds are most likely to defualt while giving the highest returns. Using Markov Chains, I devised an algorithm that tells which rated bonds to invest in and for what period given their interet and default rates.<br>
+          PS: Guess the movie the thumbnail is from<br>Source Code on <a data-aos="fade-up" class="GithubLink" href="https://github.com/CocaKhosla/TOFI-Score">Github</a></p></td>
+        </tr>
+          <td></td>
+      </table>
+    </div>
+
+
+
+
+
+    <div class="contact-form">
+      <h1 data-aos="fade-down" data-aos-offset='-50' >Get In Touch</h1>
+      <form id='contact-form' method="post" action="Email.php">
+        <input type="text" data-aos="fade-right" data-aos-offset='-50' name="name" class="form-control" placeholder=" Your Name" required><br>
+        <input type="email" data-aos="fade-left" data-aos-offset='-50' name="email" class="form-control" placeholder=" Your Email" required><br>
+        <textarea name="message" data-aos="fade-right" data-aos-offset='-50' class="form-control" placeholder=" Message" rows="4" required></textarea><br>
+        <input type="submit" data-aos="fade-left" data-aos-offset='-50' class="form-control submit" name="" value="Send Message">
+      </form>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 150,
+        duration: 800
+      });
+    </script>
+  </body>
+</html>
