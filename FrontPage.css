@@ -101,7 +101,7 @@ h2{
   color: #003568;
   font-weight: bold;
   padding-left: 2vw;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-decoration-thickness: 0.35vw;
   margin-bottom: 3vw;
 }
@@ -217,4 +217,13 @@ form .submit {
 
 form .submit:hover{
   background: #D3D3D3;
+}
+
+.resume {
+  color: #003568;
+  height: 2vw;
+}
+
+.resumeLink {
+  color: #003568;
 }
