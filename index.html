@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohan Khosla</title>
   </head>
@@ -23,9 +24,8 @@
       </div>
     </div>
 
-    <!--   data-aos="fade-right"   -->
-    <div class="Skills">
-      <h1><u>Skills</u> | <a class="resumeLink" href="https://drive.google.com/file/d/1muSc-BCg9d7X_QvkjWw1bQtk453xsql6/view?usp=sharing">Resume<img class="resume" src="open icon 2.webp" alt="open resume"></a></h1> 
+    <div data-aos="fade-right" class="Skills">
+      <h1><u>Skills</u> | <a class="resumeLink" href="https://drive.google.com/file/d/1FRvQEctgvvv4KevJ9ygtJdzUKhPWnGbH/view?usp=sharing">Resume<img class="resume" src="open icon 2.webp" alt="open resume"></a></h1>
       <div class="skillset">
         <p>Python</p>
       </div>
@@ -53,22 +53,27 @@
     </div>
 
     <div class="Work">
-      <!-- data-aos="zoom-in-down" data-aos-offset="50" -->
-      <h1><u>Experience:</u></h1>
-      <!-- data-aos="fade-right" -->
-      <div class="ProjectName">1. <a href="https://sites.google.com/iiitd.ac.in/iiitd-alive" class="Link"><b><u>IIIT Delhi:</u></b> Research Intern</a></div>
+      <h1 data-aos="zoom-in-down" data-aos-offset="50"><u>Experience:</u></h1>
+      <div data-aos="fade-right" class="ProjectName">1. <a href="https://sites.google.com/iiitd.ac.in/iiitd-alive" class="Link"><b><u>Amazon:</u></b> Software Development Engineer Intern</a></div>
       <table>
         <tr>
-          <!-- data-aos="fade-up" -->
-          <td ><img class="Thumbnail" src="IIITD Work.gif" alt=""></td>
-          <!-- data-aos="fade-down" -->
-          <td><p class="description" >Worked under Dr. Sanjit Kaul at the Networked Autonomous Systems Lab in the Autonomous Last Mile Vehicle (ALIVE) Project. Implemented a Pure Pursuit Controller in CARLA which allows the ego vehicle to accurately follow given trajectories and removed redundant steering by 90%.
+          <td data-aos="fade-up"><img class="Thumbnail" src="amazon-ss.png" alt=""></td>
+          <td><p class="description" data-aos="fade-down">Working in the Address Experience in the Geospatial Team as a Full Stack Development Engineering Intern. Developed the Additional Accessibility Requirement feature for the retail website as mandated by EU laws which requires additional delivery instructions for customers with special requirements.
+            <br>Wrote the front end using jQuery, JavaScript, JSP and Scala and the backend using Java.
+          </p></td>
+        </tr>
+      </table>
+      <div data-aos="fade-right" class="ProjectName">2. <a href="https://sites.google.com/iiitd.ac.in/iiitd-alive" class="Link"><b><u>IIIT Delhi:</u></b> Research Intern</a></div>
+      <table>
+        <tr>
+          <td data-aos="fade-up"><img class="Thumbnail" src="IIITD Work.gif" alt=""></td>
+          <td><p class="description" data-aos="fade-down">Worked under Dr. Sanjit Kaul at the Networked Autonomous Systems Lab in the Autonomous Last Mile Vehicle (ALIVE) Project. Implemented a Pure Pursuit Controller in CARLA which allows the ego vehicle to accurately follow given trajectories and removed redundant steering by 90%.
             <br>Combined the Controller with Fast Lidar Odometry And Mapping (FLOAM) on an e-Rickshaw and Mahindra SUV.
           </p></td>
         </tr>
       </table>
 
-      <div data-aos="fade-right" class="ProjectName">2. <a href="https://www.storyqube.com/" class="Link"><b><u>StoryQube:</u></b> Alexa Skill Developer Intern</a></div>
+      <div data-aos="fade-right" class="ProjectName">3. <a href="https://www.storyqube.com/" class="Link"><b><u>StoryQube:</u></b> Alexa Skill Developer Intern</a></div>
       <table>
         <tr>
           <td data-aos="fade-up"><img class="Thumbnail" src="StoryQube.png" alt=""></td>
@@ -87,9 +92,19 @@
           Source Code is on <a data-aos="fade-up" class="GithubLink"href="https://github.com/CocaKhosla/Stanley">Github</a></p></td>
         </tr>
       </table>
+      
+      
+      <div data-aos="fade-right" data-aos-offset="50" class="ProjectName">2. <a href="https://youtu.be/aCDPwZZm9C4" class="Link">Model Predictive Controller for Obstacle Avoidance on Vehicles with Non-Ackermann Constraints</a></div>
+      <table>
+        <tr>
+          <td data-aos="fade-up" ><img class="Thumbnail" src="mpc-controller.png" alt="Simulation Showing Stanley Controller"></td>
+          <td><p class="description" data-aos="fade-down">An MPC Controller is written in MATLAB which solves the discretised future steps of the ego vehicle to create the <b>optimal path</b> from start point to end point. Obstacles added as constraints to the equations.<br>Tested on Gazebo on several <b>Ackermann (Non-Holonomic) Drive Vehicles</b>. Also, tested on a physical Turtlebot3.<br>
+          Source Code is on <a data-aos="fade-up" class="GithubLink"href="https://github.com/CocaKhosla/Model-Predictive-Control">Github</a></p></td>
+        </tr>
+      </table>
 
 
-      <div data-aos="fade-right" class="ProjectName">2. <a href="" class="Link">Estimating the Profit of Bonds Using R Langauge</a></div>
+      <div data-aos="fade-right" class="ProjectName">3. <a href="" class="Link">Estimating the Profit of Bonds Using R Langauge</a></div>
       <table class="last_project">
         <tr>
           <td data-aos="fade-up"><img class="Thumbnail" src="Margin Call.png" alt=""></td>
@@ -97,15 +112,6 @@
           PS: Guess the movie the thumbnail is from<br>Source Code on <a data-aos="fade-up" class="GithubLink" href="https://github.com/CocaKhosla/TOFI-Score">Github</a></p></td>
         </tr>
           <td></td>
-      </table>
-
-      <div data-aos="fade-right" data-aos-offset="50" class="ProjectName">3. <a href="https://cocakhosla.github.io/incentrop" class="Link">Incentrop</a></div>
-      <table>
-        <tr>
-          <td data-aos="fade-up" ><img class="Thumbnail" src="Incentrop Image.png" alt=""></td>
-          <td><p class="description" data-aos="fade-down">Incentrop is a website designed using HTML, CSS and JS where I post about things that pique my interest. Being a Science student, I don't want to box myself into just learning about Science and Engineering. Hence, this website gives me an incentive to learn about both Science and the Arts.<br>
-          Source Code is on <a data-aos="fade-up" class="GithubLink"href="https://github.com/CocaKhosla/incentrop">Github</a></p></td>
-        </tr>
       </table>
 
       <div data-aos="fade-right" class="ProjectName">4. <a href="https://www.youtube.com/channel/UCkeYJ1z8rDJc-3Et1Oiy8OQ" class="Link">YouTube Channel: CocaKhosla</a></div>
@@ -123,16 +129,33 @@
       <div data-aos="fade-right" data-aos-offset="50" class="ProjectName"><a href="https://www.youtube.com/watch?v=O5x6_6F597g&t=213s" class="Link">1. <u>Anatolian Rover Challenge</u></a></div>
       <table>
         <tr>
-          <td data-aos="fade-up" ><img class="Thumbnail" src="ARC.jpg" alt="Simulation Showing Stanley Controller"></td>
+          <td data-aos="fade-up" ><img class="Thumbnail" src="ARC.jpg" alt="ARC"></td>
           <td><p class="description" data-aos="fade-down">Placed <b>2nd Overall</b> at the <b>Anatolian Rover Challenge</b> held in Istanbul, Turkey.<br>The Project also won the best Autonomous and Controls Subsystem and the best Science Subsystem.<br>The Challenge requires teams to have their rovers compete in challenges involving <b>Autonomous Navigation in a Rocky Terrain</b>, <b>Manipulation of a Robotic Arm to lift weights</b> and <b>Perform High Precision Tasks</b> and the ability to <b>Detect Signs of Life</b>.<br>
           To read more about the Kratos Mars Rover click <a data-aos="fade-up" class="GithubLink"href="https://kratosbitsgoa.com/">here</a>.</p></td>
         </tr>
       </table>
 
-      <div data-aos="fade-right" data-aos-offset="50" class="ProjectName"><a href="https://www.youtube.com/watch?v=Ok03ddqfSL4&t=168s" class="Link">2. <u>University Rover Challenge 2022</u></a></div>
+      <div data-aos="fade-right" data-aos-offset="50" class="ProjectName"><a href="https://www.youtube.com/watch?v=O5x6_6F597g&t=213s" class="Link">2. <u>International Rover Challenge</u></a></div>
       <table>
         <tr>
-          <td data-aos="fade-up" ><img class="Thumbnail" src="URC.jpg" alt="Simulation Showing Stanley Controller"></td>
+          <td data-aos="fade-up" ><img class="Thumbnail" src="irc.avif" alt="IRC"></td>
+          <td><p class="description" data-aos="fade-down">Won the Overall Excellence Award</b> at the <b>International Rover Challenge</b> held in Bangalore, India.<br>The Challenge requires teams to have their rovers compete in challenges involving <b>Autonomous Navigation in a Rocky Terrain</b>, <b>Manipulation of a Robotic Arm to lift weights</b> and <b>Perform High Precision Tasks</b> and the ability to <b>Detect Signs of Life</b>.<br>
+          To read more about the Kratos Mars Rover click <a data-aos="fade-up" class="GithubLink"href="https://kratosbitsgoa.com/">here</a>.</p></td>
+        </tr>
+      </table>
+      
+      <div data-aos="fade-right" data-aos-offset="50" class="ProjectName"><a href="https://www.youtube.com/watch?v=O5x6_6F597g&t=213s" class="Link">3. <u>Diversity Scholarship Awardee: Open Robotics</u></a></div>
+      <table>
+        <tr>
+          <td data-aos="fade-up" ><img class="Thumbnail" src="roscon.png" alt="Open Robotics"></td>
+          <td><p class="description" data-aos="fade-down">Received a scholarship to attend ROSCon 2023 in New Orleans. ROSCon is an annual developer conference organised by Open Robotics where latest developments in ROS are discussed. They provide scholarships to those who display exemplary talent in the field of robotics.</p></td>
+        </tr>
+      </table>
+      
+      <div data-aos="fade-right" data-aos-offset="50" class="ProjectName"><a href="https://www.youtube.com/watch?v=Ok03ddqfSL4&t=168s" class="Link">4. <u>University Rover Challenge 2022</u></a></div>
+      <table>
+        <tr>
+          <td data-aos="fade-up" ><img class="Thumbnail" src="URC.jpg" alt="URC"></td>
           <td><p class="description" data-aos="fade-down">Placed <b>1st in India and 2nd in Asia</b> at the <b>University Rover Challenge</b><br>The Challenge requires teams to have their rovers compete in challenges involving <b>Autonomous Navigation in a Rocky Terrain</b>, <b>Manipulation of a Robotic Arm to lift weights</b> and <b>Perform High Precision Tasks</b> and the ability to <b>Detect Signs of Life</b>.<br>
           To read more about the Kratos Mars Rover click <a data-aos="fade-up" class="GithubLink"href="https://kratosbitsgoa.com/">here</a>.</p></td>
         </tr>
@@ -156,12 +179,14 @@
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript">var submitted=false;</script>
     <script type="text/javascript">
-    $('#contact-form').on('submit', function(e) {
-    $('#contact-form *').fadeOut(2000);
-    $('#contact-form *').color(#000000);
-    $('#contact-form').prepend('Your submission has been processed...');
-  });
-</script>
+        $(document).ready(function () {
+            $('#contact-form').on('submit', function(e) {
+            $('#contact-form*').fadeOut(2000);
+            $('#contact-form').find('.form-control.submit').val('Your submission has been processed...');
+            });
+        });
+    </script>
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
